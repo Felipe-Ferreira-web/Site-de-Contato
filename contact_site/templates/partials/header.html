@@ -5,35 +5,36 @@
 
   <div class="flex flex-row justify-center px-12 py-4 bg-gray-700">
     <div class="flex flex-row ml-4 mr-auto">
+
       <div class="flex flex-row justify-center items-center mx-4">
-        <p class="items-center text-white">
-          {% bs_icon 'telephone-fill' %}
-        </p>
+        <p class="items-center text-white">{% bs_icon 'telephone-fill' %}</p>
         <p class="flex font-bold text-white text-center ml-4">(13) 9999-9999</p>
-        </div>
-        <div class="flex flex-row justify-center items-center mx-4">
-        <p class="items-center text-white">
-          {% bs_icon 'envelope-fill' %}
-        </p>
-          <p class="flex font-bold text-white text-center ml-4">example@gmail.com</p>
-        </p>
       </div>
+
+      <div class="flex flex-row justify-center items-center mx-4">
+        <p class="items-center text-white">{% bs_icon 'envelope-fill' %}</p>
+        <p class="flex font-bold text-white text-center ml-4">example@gmail.com</p>
+      </p>
     </div>
-    <div class="flex flex-row justify-center ml-auto mr-4">
-      <a class="flex text-white items-center mr-5" href="link">{% bs_icon 'whatsapp' %}</a>
-      <a class="flex text-white items-center mr-5" href="link"
-        >{% bs_icon 'instagram' %}</a
-      >
-      <a class="flex text-white items-center" href="link">{% bs_icon 'linkedin' %}</a>
-    </div>
+
   </div>
 
-  <div class="flex flex-row justify-center px-12 py-4 bg-white">
-    <div class="ml-4 mt-5 mb-5 m-auto">[logo]</div>
-    <div class="flex space-x-4 space-x-reverses mr-4 mt-5 mb-5 ml-auto">
-      <a class="font-bold text-center hover:text-blue-500 transition duration-150 ease-in-out" href="{% url "site:index" %}">Home</a>
-      <a class="font-bold text-center hover:text-blue-500 transition duration-150 ease-in-out" href="link">Serviços</a>
-      <a class="font-bold text-center hover:text-blue-500 transition duration-150 ease-in-out" href="link">Contato </a>
-    </div>
+  <div class="flex flex-row justify-center ml-auto mr-4">
+    <a class="flex text-white items-center mr-5" href="link">{% bs_icon 'whatsapp' %}</a>
+    <a class="flex text-white items-center mr-5" href="link">{% bs_icon 'instagram' %}</a>
+    <a class="flex text-white items-center" href="link">{% bs_icon 'linkedin' %}</a>
   </div>
+</div>
+
+<div class="flex flex-row justify-center px-12 py-4 bg-white">
+  <div class="ml-4 mt-5 mb-5 m-auto">[logo]</div>
+  <div class="flex space-x-4 space-x-reverses mr-4 mt-5 mb-5 ml-auto">
+    <a class="font-bold text-center hover:text-blue-500 transition duration-150 ease-in-out"
+       href="{% url "site:index" %}">Home</a>
+    <a class="font-bold text-center hover:text-blue-500 transition duration-150 ease-in-out"
+       href="link">Serviços</a>
+    <a class="font-bold text-center hover:text-blue-500 transition duration-150 ease-in-out"
+       href="link">Contato</a>
+  </div>
+</div>
 </header>
