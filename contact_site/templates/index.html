@@ -3,18 +3,31 @@
 
 {% block content %}
 
-    <div class="bg-cover bg-center h-200 w-auto mask-l-from-5% mask-l-to-95% mask-b-from-40% mask-b-to-95%"
-         style="background-image: url('{% static 'imgs/img_1.jpg' %}')">
+    <div class="relative w-full overflow-hidden">
 
-        <div class="flex items-center pt-85 pl-6">
-            <h1 class="font-[Michroma] text-[4rem] items-center text-black font-bold backdrop-opacity-60 uppercase">ACJR Engenharia</h1>
+        <div class="absolute inset-0 bg-cover bg-center h-200 mask-l-from-5% mask-l-to-95% mask-b-from-40% mask-b-to-95%"
+             style="background-image: url('{% static 'imgs/footer.jpeg' %}')"></div>
+
+        <div class="relative z-10 h-200 flex items-center px-12 mx-10">
+
+            <div class="flex flex-col">
+
+                <div class="text-white text-[3rem] lg:text-[1.8rem] font-semibold ">
+
+                    <p>Bem vindo a</p>
+
+                    <h1 class="text-[5rem] mt-2">ACJR Engenharia</h1>
+                </div>
+
+            </div>
+
         </div>
 
     </div>
 
-    <div class="flex flex-col justify-center h-150 text-white pt-200px min-w-1/1 bg-gradient-to-b from-blue-950 from-65% to-black">
+    <div class="flex flex-col justify-center h-170 text-white pt-200px min-w-1/1 bg-gradient-to-b from-blue-950 from-65% to-black">
 
-        <div class="flex flex-col align-start pb-65">
+        <div class="flex flex-col align-start pb-30">
 
             <h2 class="text-center text-[2rem] mb-3">Excelência técnica para a segurança da sua operação</h2>
 
@@ -27,7 +40,7 @@
 
     </div>
 
-    <div class="bg-slate-100 h-auto p-10">
+    <div id="serviços" class="bg-slate-100 h-auto p-10">
 
         <div class="container flex justify-items-center  flex-col mx-auto text-center">
 
@@ -35,7 +48,7 @@
 
             <h1 class="font-[Michroma] text-[2rem] items-center text-black font-semibold backdrop-opacity-60 uppercase mt-2 mb-20">Soluções completas em laudos e vistorias para garantir a segurança da sua operação.</h1>
 
-            <div class="grid grid-cols-1 xl:grid-cols-2 gap-4">
+            <div class="grid grid-cols-1 xl:grid-cols-1 gap-4">
 
                 <div class="flex flex-row justify-strech bg-gray-100 rounded-lg shadow-lg mb-15 hover:scale-[1.02] transition-transform duration-300 hover:shadow-2xl">
 
@@ -79,30 +92,6 @@
                             <li>Laudos de integridade em Estruturas Metálicas.</li>
 
                             <li>Emissão de ART de instalação e manutenção.</li>
-
-                        </ul>
-                    </div>
-
-                </div>
-
-                <div class="flex flex-row justify-strech bg-gray-100 rounded-lg shadow-lg mb-15 hover:scale-[1.02] transition-transform duration-300 hover:shadow-2xl">
-
-                    <img class="w-1/3 object-cover rounded-l-lg"
-                         alt="img"
-                         src="{% static "imgs\table.jpg" %}">
-
-                    <div class="flex flex-col flex-1 text-left">
-
-                        <h2 class="text-gray-100 p-4 bg-blue-950 text-[1.5rem] lg:text-[1.8rem] font-semibold rounded-tr-lg h-24 flex items-center">Climatização e Ar</h2>
-
-                        <ul class="list-disc text-base/9 p-10 rounded-br-lg">
-                            <li>Elaboração e gestão do PMOC completo.</li>
-
-                            <li>Inspeção em Sistemas de Exaustão industrial.</li>
-
-                            <li>Adequação técnica para Cozinhas Industriais.</li>
-
-                            <li>Laudos de Qualidade do Ar (ANVISA).</li>
 
                         </ul>
                     </div>
