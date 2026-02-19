@@ -12,11 +12,16 @@
 
             <div class="flex flex-col">
 
-                <div class="text-white text-[3rem] lg:text-[1.8rem] font-semibold ">
+                <div class="text-white font-semibold">
 
-                    <p>Bem vindo a</p>
+                    <div class="@container">
 
-                    <h1 class="text-[5rem] mt-2">ACJR Engenharia</h1>
+                        <p class="text-[1rem] whitespace-nowrap mb-1">Bem vindo a</p>
+
+                        <h1 class="text-[5rem] leading-[1] mt-2 max-[530px]:pr-2 text-[3rem]">ACJR Engenharia</h1>
+
+                    </div>
+
                 </div>
 
             </div>
@@ -25,99 +30,115 @@
 
     </div>
 
-    <div class="flex flex-col justify-center h-170 text-white pt-200px min-w-1/1 bg-gradient-to-b from-blue-950 from-65% to-black">
+    <div class="@container">
 
-        <div class="flex flex-col align-start pb-30">
+        <div class="flex flex-col justify-center h-170 text-white pt-200px min-w-1/1 bg-gradient-to-b from-blue-950 from-65% to-black ">
 
-            <h2 class="text-center text-[2rem] mb-3">Excelência técnica para a segurança da sua operação</h2>
+            <div class="flex flex-col align-start pb-30">
 
-            <p class="text-center text-[1rem] max-w-1/2 my-1 mx-auto">Conheça nossos serviços especializados em transporte ferroviário, sistemas industriais e segurança do trabalho.</p>
+                <h2 class="text-center text-[2rem]/9 m-3 ">Excelência técnica para a segurança da sua operação</h2>
 
-            <p class="text-center text-[1rem] max-w-1/2 my-1 mx-auto">
-                A ACJR Engenharia é especializada na prestação de serviços de engenharia mecânica, com foco em soluções técnicas de alta precisão, como laudos técnicos, perícias e assistência técnica judicial, além da gestão de PMOC. Comprometidos com a excelência, personalizamos cada entrega de acordo com as demandas específicas de nossos clientes, mobilizando profissionais experientes e credenciados para assegurar o rigor técnico e a qualidade superior em todos os nossos processos.
-            </p>
+                <p class="text-center text-[1rem] max-w-1/2 my-3 mx-auto">Conheça nossos serviços especializados em transporte ferroviário, sistemas industriais e segurança do trabalho.</p>
+
+                <p class="text-center text-[1rem] max-w-1/2 my-1 mb-20 mx-auto ">
+                    A ACJR Engenharia é especializada na prestação de serviços de engenharia mecânica, com foco em soluções técnicas de alta precisão, como laudos técnicos, perícias e assistência técnica judicial, além da gestão de PMOC. Comprometidos com a excelência, personalizamos cada entrega de acordo com as demandas específicas de nossos clientes, mobilizando profissionais experientes e credenciados para assegurar o rigor técnico e a qualidade superior em todos os nossos processos.
+                </p>
+            </div>
+            <div id="serviços"></div>
         </div>
 
     </div>
 
-    <div id="serviços" class="bg-slate-100 h-auto p-10">
+    <div class="bg-slate-100 h-auto py-15">
 
         <div class="container flex justify-items-center  flex-col mx-auto text-center">
 
-            <h3 class="text-gray-400 text-[1.5rem]">SERVIÇOS ACJR</h3>
+            <h3 class="text-gray-400 text-[1.5rem] ">SERVIÇOS ACJR</h3>
 
-            <h1 class="font-[Michroma] text-[2rem] items-center text-black font-semibold backdrop-opacity-60 uppercase mt-2 mb-20">Soluções completas em laudos e vistorias para garantir a segurança da sua operação.</h1>
+            <h1 class="font-[Michroma] text-[2rem] items-center text-black font-semibold backdrop-opacity-60 uppercase mt-2 mb-20 mx-2 ">Soluções completas em laudos e vistorias para garantir a segurança da sua operação.</h1>
 
             <div class="grid grid-cols-1 xl:grid-cols-1 gap-4">
 
-                <div class="flex flex-row justify-strech bg-gray-100 rounded-lg shadow-lg mb-15 hover:scale-[1.02] transition-transform duration-300 hover:shadow-2xl">
+                <div class="@container">
 
-                    <img class="w-1/3 object-cover rounded-l-lg"
-                         alt="img"
-                         src="{% static "imgs\Seguranca_Maquinas.jpg" %}">
+                    <div class="flex flex-row justify-strech bg-gray-100 rounded-lg shadow-lg mb-15 hover:scale-[1.02] transition-transform duration-300 hover:shadow-2xl @max-[768px]:flex-col @max-[768px]:m-2">
 
-                    <div class="flex flex-col flex-1 text-left">
+                        <img class="w-1/3 object-cover rounded-l-lg @max-[768px]:w-full @max-[768px]:rounded-none @max-[768px]:rounded-t-lg @max-[768px]:h-80"
+                             alt="img"
+                             src="{% static "imgs\Seguranca_Maquinas.jpg" %}">
 
-                        <h2 class="text-gray-100 p-4 bg-blue-950 text-[1.5rem] lg:text-[1.8rem] font-semibold rounded-tr-lg h-24 flex items-center">Segurança de Máquinas</h2>
+                        <div class="flex flex-col flex-1 text-left">
 
-                        <ul class=" list-disc text-base/9 p-10 rounded-br-lg">
-                            <li>Adequação e Laudos de conformidade NR12.</li>
+                            <h2 class="text-gray-100 p-4 bg-blue-950 text-[1.5rem] lg:text-[1.8rem] font-semibold rounded-tr-lg h-24 flex items-center @max-[768px]:rounded-none">Segurança de Máquinas</h2>
 
-                            <li>Inspeção técnica em equipamentos de carga NR11.</li>
+                            <ul class="flex flex-col list-disc text-base/6 pt-5 p-10 rounded-br-lg gap-3">
+                                <li>Adequação e Laudos de conformidade NR12.</li>
 
-                            <li>Projeto e instalação de Linhas de Vida.</li>
+                                <li>Inspeção técnica em equipamentos de carga NR11.</li>
 
-                            <li>Testes de Carga e ensaios de integridade.</li>
+                                <li>Projeto e instalação de Linhas de Vida.</li>
 
-                        </ul>
+                                <li>Testes de Carga e ensaios de integridade.</li>
+
+                            </ul>
+                        </div>
+
                     </div>
 
                 </div>
 
-                <div class="flex flex-row justify-strech bg-gray-100 rounded-lg shadow-lg mb-15 hover:scale-[1.02] transition-transform duration-300 hover:shadow-2xl">
+                <div class="@container">
 
-                    <img class="w-1/3 object-cover rounded-l-lg"
-                         alt="img"
-                         src="{% static "imgs\infra.jpg" %}">
+                    <div class="flex flex-row justify-strech bg-gray-100 rounded-lg shadow-lg mb-15 hover:scale-[1.02] transition-transform duration-300 hover:shadow-2xl @max-[768px]:flex-col @max-[768px]:m-2">
 
-                    <div class="flex flex-col flex-1 text-left">
+                        <img class="w-1/3 object-cover rounded-l-lg @max-[768px]:w-full @max-[768px]:rounded-none @max-[768px]:rounded-t-lg @max-[768px]:h-80"
+                             alt="img"
+                             src="{% static "imgs\infra.jpg" %}">
 
-                        <h2 class="text-gray-100 p-4 bg-blue-950 text-[1.5rem] lg:text-[1.8rem] font-semibold rounded-tr-lg h-24 flex items-center">Infraestrutura e Lazer</h2>
+                        <div class="flex flex-col flex-1 text-left">
 
-                        <ul class="list-disc text-base/9 p-10 rounded-br-lg">
-                            <li>Inspeção de segurança em Playgrounds.</li>
+                            <h2 class="text-gray-100 p-4 bg-blue-950 text-[1.5rem] lg:text-[1.8rem] font-semibold rounded-tr-lg h-24 flex items-center @max-[768px]:rounded-none">Infraestrutura e Lazer</h2>
 
-                            <li>Vistoria técnica para Brinquedos de Lazer.</li>
+                            <ul class="flex flex-col list-disc text-base/6 pt-5 p-10 rounded-br-lg gap-3">
+                                <li>Inspeção de segurança em Playgrounds.</li>
 
-                            <li>Laudos de integridade em Estruturas Metálicas.</li>
+                                <li>Vistoria técnica para Brinquedos de Lazer.</li>
 
-                            <li>Emissão de ART de instalação e manutenção.</li>
+                                <li>Laudos de integridade em Estruturas Metálicas.</li>
 
-                        </ul>
+                                <li>Emissão de ART de instalação e manutenção.</li>
+
+                            </ul>
+                        </div>
+
                     </div>
 
                 </div>
 
-                <div class="flex flex-row justify-strech bg-gray-100 rounded-lg shadow-lg mb-15 hover:scale-[1.02] transition-transform duration-300 hover:shadow-2xl">
+                <div class="@container">
 
-                    <img class="w-1/3 object-cover rounded-l-lg"
-                         alt="img"
-                         src="{% static "imgs\pericial.jpg" %}">
+                    <div class="flex flex-row justify-strech bg-gray-100 rounded-lg shadow-lg mb-15 hover:scale-[1.02] transition-transform duration-300 hover:shadow-2xl @max-[768px]:flex-col @max-[768px]:m-2">
 
-                    <div class="flex flex-col flex-1 text-left">
+                        <img class="w-1/3 object-cover rounded-l-lg @max-[768px]:w-full @max-[768px]:rounded-none @max-[768px]:rounded-t-lg @max-[768px]:h-80"
+                             alt="img"
+                             src="{% static "imgs\pericial.jpg" %}">
 
-                        <h2 class="text-gray-100 p-4 bg-blue-950 text-[1.5rem] lg:text-[1.8rem] font-semibold rounded-tr-lg h-24 flex items-center">Jurídico e Pericial</h2>
+                        <div class="flex flex-col flex-1 text-left">
 
-                        <ul class="list-disc text-base/9 p-10 rounded-br-lg">
-                            <li>Atuação como Perito Judicial e Assistente.</li>
+                            <h2 class="text-gray-100 p-4 bg-blue-950 text-[1.5rem] lg:text-[1.8rem] font-semibold rounded-tr-lg h-24 flex items-center @max-[768px]:rounded-none">Jurídico e Pericial</h2>
 
-                            <li>Elaboração de Quesitos Técnicos e Pareceres.</li>
+                            <ul class="flex flex-col list-disc text-base/6 pt-5 p-10 rounded-br-lg gap-3">
+                                <li>Atuação como Perito Judicial e Assistente.</li>
 
-                            <li>Avaliação de Ativos e máquinas industriais.</li>
+                                <li>Elaboração de Quesitos Técnicos e Pareceres.</li>
 
-                            <li>Vistoria Cautelar de vizinhança e estruturas.</li>
+                                <li>Avaliação de Ativos e máquinas industriais.</li>
 
-                        </ul>
+                                <li>Vistoria Cautelar de vizinhança e estruturas.</li>
+
+                            </ul>
+                        </div>
+
                     </div>
 
                 </div>
