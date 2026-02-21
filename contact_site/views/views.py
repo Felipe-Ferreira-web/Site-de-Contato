@@ -10,3 +10,13 @@ def index(request):
         request,
         "index.html", context
     )
+
+def contato(request):
+    
+    context = {
+        "site_title": "Formulário de Contato"
+    }
+    return render(
+        request,
+        "contato.html", context
+    )   
