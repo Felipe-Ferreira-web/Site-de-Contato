@@ -1,0 +1,100 @@
+{% extends "global/base.html" %}
+{% load static %}
+{% load bootstrap_icons %}
+
+{% block content %}
+
+    <div class="flex flex-row justify-center h-full bg-gray-300 max-lg:h-auto">
+
+        <div class="flex flex-row justify-center rounded-lg shadow-lg bg-white m-10 h-5/6 p-5 w-3/4 max-lg:flex-col max-lg:h-auto max-lg:w-9/10 max-lg:items-center max-lg:text-center max-lg:mx-1">
+
+            <div class="flex flex-col text-3xl m-4 justify-center items-center font-semibold w-1/2 max-lg:w-full">
+
+                <div class="flex flex-col justify-starts w-4/5 max-lg:w-full max-lg:mx-1 max-lg:text-xl">
+
+                    <h2 class="text-[3rem/6] mb-8">Fale Conosco!</h2>
+
+                    <p class="text-[2.5rem/6] text-blue-400 mb-5">Precisa de um orçamento, tem dúvidas, sugestões, ou críticas?</p>
+
+                    <div class="mb-8">
+
+                        <p class="mb-2">Estamos prontos para ouvir você.</p>
+
+                        <p class="text-gray-700 text-lg">Retornaremos o contato o mais rápido possível!</p>
+                    </div>
+
+                    <div class="flex flex-col mb-4 mb-2 text-lg max-lg:items-center">
+
+                        <div class="flex items-center flex-row gap-4">
+                            <span class="text-blue-400">{% bs_icon 'telephone' %}</span>
+                            <p class="text-gray-400 whitespace-nowrap">(13) 9999-9999</p>
+                        </div>
+
+                        <div class="flex items-center flex-row gap-4">
+                            <span class="text-blue-400 text-size">{% bs_icon 'envelope' %}</span>
+                            <p class="text-gray-400">example@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="flex flex-col justify-center items-center text-lg m-4 w-1/2 max-lg:w-4/5">
+
+                <form class="flex flex-col w-4/5 gap 10 max-lg:w-full max-lg:mx-3 max-lg:text-left"
+                      action=""
+                      method="post"
+                      id="myform">
+
+                    <div class="flex flex-col">
+                        <label class="text-gray-400" for="name">Nome Completo</label>
+                        <input class="border-2 border-gray-400  shadow-lg p-2 rounded-lg mb-2"
+                               type="text"
+                               name="name"
+                               id="name"
+                               placeholder="Ex: Jorge Santos"
+                               required>
+                    </div>
+
+                    <div class="flex flex-col">
+                        <label class="text-gray-400" for="email">E-mail corporativo</label>
+                        <input class="border-2 mb-2 shadow-lg p-2 rounded-lg border-gray-400"
+                               type="text"
+                               name="email"
+                               id="email"
+                               placeholder="Ex: exemplo@outlook.com"
+                               required>
+                    </div>
+
+                    <div class="flex flex-col">
+                        <label class="text-gray-400" for="object">Assunto</label>
+                        <input class="border-2 shadow-lg p-2 rounded-lg mb-2 border-gray-400 "
+                               type="text"
+                               name="object"
+                               id="object"
+                               placeholder="Ex: Consultoria, Orçamento, Outro"
+                               required>
+                    </div>
+
+                    <div class="flex flex-col">
+                        <label class="text-gray-400" for="message">Mensagem</label>
+                        <textarea class="border-2 shadow-lg p-2 rounded-lg mb-4 border-gray-400"
+                                  name="message"
+                                  id="message"
+                                  required></textarea>
+                    </div>
+
+                    <div class="flex justify-center">
+                        <button class="bg-white text-blue-400 font-semibold w-full border-3 border-blue-400 rounded-lg p-3 px-5 shadow-xl hover:bg-blue-400 hover:text-white cursor-pointer active:bg-blue-500 shadow-none whitespace-nowrap max-[980px]:mt-5 transition active:scale-95"
+                                type="submit"
+                                id="submitbtn">Enviar</button>
+
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+{% endblock content %}
