@@ -3,7 +3,7 @@
 
 <footer>
 
-    <div class="@container bg-gray-700 h-150">
+    <div class="@container bg-gray-700 h-130">
 
         <div class="my-5 mx-auto">
 
@@ -16,16 +16,18 @@
                 </div>
 
                 <div class="m-2">
-                    <button class="bg-blue-400 font-semibold rounded-lg text-gray-100 p-3 px-5 shadow-xl hover:bg-blue-500 cursor-pointer active:bg-blue-400 shadow-none whitespace-nowrap max-[980px]:mt-5"
-                            type="submit"
-                            formaction="">Solicite um Orçamento</button>
+                    <a target="_blank" rel="noopener noreferrer" href="">
+                        <button class="bg-blue-400 font-semibold rounded-lg text-gray-100 p-3 px-5 shadow-xl hover:bg-blue-500 cursor-pointer active:bg-blue-400 shadow-none whitespace-nowrap max-[980px]:mt-5 transition active:scale-95"
+                                type="submit">Solicite um Orçamento</button>
+                    </a>
+
                 </div>
 
             </div>
 
         </div>
 
-        <div class="relative w-full h-[400px] overflow-hidden bg-gray-700 max-[520px]:h-[550px]">
+        <div class="relative w-full h-full overflow-hidden bg-gray-700 max-[520px]:h-[550px]">
 
             <div class="absolute inset-0 bg-cover bg-center md:bg-top opacity-60"
                  style="background-image: url('{% static 'imgs/footer.jpeg' %}')"></div>
@@ -64,7 +66,8 @@
 
                             <p class="text-gray-400 gap 5">example@gmail.com</p>
 
-                            <a class="flex text-white items-center justify-center mr-5" href="link">{% bs_icon 'whatsapp' %}
+                            <a class="flex text-white items-center justify-start mr-5 max-[520px]:justify-center"
+                               href="link">{% bs_icon 'whatsapp' %}
 
                                 <p class="ml-2">Entre em contato</p>
                             </a>
