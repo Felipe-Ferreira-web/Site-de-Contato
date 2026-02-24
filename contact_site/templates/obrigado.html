@@ -1,0 +1,21 @@
+{% extends "global/base.html" %}
+{% load static %}
+{% load bootstrap_icons %}
+
+{% block content %}
+    <div class="flex flex-row justify-center h-full bg-gray-300">
+
+        <div class="flex flex-col justify-center items-center rounded-lg shadow-lg text-center bg-white my-10 mx-auto h-5/6 p-5 w-3/4 pb-50px">
+
+            <span class="text-blue-400 font-bold text-2xl">{% bs_icon 'check-circle' size='120px' %}</span>
+
+            <h1 class="text-3xl font-semibold mt-4 mb-2">Obrigado pelo contato!</h1>
+
+            <p class=" text-md text-gray-400">Em breve um de nossos consultores entrará em contato com você.</p>
+
+            <a href="{% url "site:index" %}">
+                <button class="bg-blue-400  font-semibold rounded-lg text-2xl text-gray-100 px-10 mt-10 py-4 shadow-xl hover:bg-blue-500 transition active:scale-95 whitespace-nowrap max-md:px-6 max-md:py-3 max-md:text-xl">Voltar para Home</button>
+            </a>
+        </div>
+    </div>
+{% endblock content %}
