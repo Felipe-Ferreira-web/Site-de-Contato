@@ -6,14 +6,14 @@ from django.utils.html import strip_tags
 from django.conf import settings
 
 
-def index(request):
+def Home(request):
     
     context = {
         "site_title": "Home"
     }
     return render(
         request,
-        "index.html", context
+        "Home.html", context
     )
 
 
