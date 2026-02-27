@@ -1,7 +1,9 @@
 from django.shortcuts import render, redirect
 from contact_site.form import ContactForm
-from django.core.mail import send_mail
-from decouple import config
+from django.core.mail import EmailMultiAlternatives
+from django.template.loader import render_to_string
+from django.utils.html import strip_tags
+from django.conf import settings
 
 
 def index(request):
@@ -15,7 +17,7 @@ def index(request):
     )
 
 
-def contato(request):
+def form_email(request):
     if request.method == "POST":
 
         form = ContactForm(request.POST)
@@ -26,12 +28,15 @@ def contato(request):
             object = form.cleaned_data['object']
             message = form.cleaned_data['message']
 
-            send_mail(
-                subject=object,
-                message=(f"Olá, eu sou {name}\n\n{message}.\n\nAtenciosamente {name}\n\n*Lembrete: Este é um endereço de email automático, para responder este email, envie-o para: {email}"), 
-                from_email=email, 
-                recipient_list=[config("EMAIL_HOST_USER")],
-                fail_silently=False),
+            html_content = render_to_string('emails/email.html', {'name': name, 'email': email, 'object': object, 'message': message})
+
+            text_content = strip_tags(html_content)
+
+            email = EmailMultiAlternatives(object, text_content, settings.EMAIL_HOST_USER, [settings.EMAIL_HOST_USER])
+            
+            email.attach_alternative(html_content, 'text/html')
+
+            email.send()
             return redirect("site:obrigado")
             
     else:
