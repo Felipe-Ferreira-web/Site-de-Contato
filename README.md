@@ -31,12 +31,9 @@ Diferente de uma página estática simples, esta aplicação utiliza Django para
 * **Single Page Experience (Home)**: Seção "Sobre" integrada à vitrine de serviços para uma navegação fluida.
 
 * **Fluxo de Contato Automatizado**:
-
- * Formulário com validação de dados.
-
- * Disparo automático de e-mail formatado em HTML para o administrador.
-
- * Redirecionamento inteligente para página de agradecimento (Success Page).
+    * Formulário com validação de dados.
+    * Disparo automático de e-mail formatado em HTML para o administrador.
+    * Redirecionamento inteligente para página de agradecimento (Success Page).
 
 * **Componentização**: Header e Footer consistentes em todas as rotas da aplicação.
 
