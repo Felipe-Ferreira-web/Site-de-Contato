@@ -1,6 +1,6 @@
 # Vitrine Digital - ACJR Engenharia Mecânica ⚙️
 
-Este projeto é um site institucional e vitrine virtual desenvolvido para a empresa ACRJ Engenharia Mecânica. O objetivo principal é centralizar a presença digital da marca, apresentando seus serviços de forma clara e facilitando o contato direto com clientes em potencial.
+Este projeto é um site institucional e vitrine virtual desenvolvido para a empresa ACJR Engenharia Mecânica. O objetivo principal é centralizar a presença digital da marca, apresentando seus serviços de forma clara e facilitando o contato direto com clientes em potencial.
 
 ```mermaid
 flowchart TD
